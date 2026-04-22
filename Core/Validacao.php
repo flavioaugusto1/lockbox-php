@@ -76,8 +76,6 @@ class Validacao
 
         $database = new Database(config('database'));
 
-        dd($database);
-
         $usuario = $database->query(
             query: "select * from $tabela where $campo = :email",
             class: Usuario::class,

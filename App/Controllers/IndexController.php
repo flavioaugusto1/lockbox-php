@@ -6,6 +6,6 @@ class IndexController
 {
     public function __invoke()
     {
-        view('index');
+        view('index', template: 'guest');
     }
 }
